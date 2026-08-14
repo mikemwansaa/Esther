@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Esther</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+<source src="audio/with-you.mp3" type="audio/mpeg">
+</audio>
+
+<div id="passwordScreen" class="screen">
+<div class="glass login-box">
+<h1>For Essie</h1>
+<p>Before entering...</p>
+<h3>What football team does Mike support?</h3>
+<input type="text" id="passwordInput" placeholder="Your answer">
+<button id="unlockBtn">Unlock</button>
+<p id="error"></p>
+</div>
+</div>
+
+<div id="candleScreen" class="screen candle-screen" style="display: none; opacity: 0;">
+  <div class="wish-card">
+    <div class="wish-icon">♨</div>
+    <h1>Blow the candles and make a wish...</h1>
+    <div class="wish-divider"><span>♥</span></div>
+    <p class="wish-subtitle">Take a deep breath and blow into your mic 💨</p>
+    <div class="cake-stage" aria-live="polite">
+      <img id="birthdayCake" src="images/cake-lit.png" alt="Birthday cake with lit candles">
+      <div id="smokeLayer" aria-hidden="true"></div>
+    </div>
+    <div id="micStatus" class="mic-status"><span class="mic-dot">🎙</span> Listening for your blow... <span class="sound-bars">▮▮▮</span></div>
+    <p id="micHint" class="mic-hint">Can't use mic? Use the button below to blow candles.</p>
+    <button id="manualBlowBtn" class="manual-blow" type="button" style="display:none;">Blow Out Candles</button>
+  </div>
+</div>
+
+<div id="mainSite" style="display: none;">
+
+<section class="hero">
+  <div class="music-badge">♫ Playing our song... <span>▮▮▮</span></div>
+  <div class="confetti confetti-a">◆</div><div class="confetti confetti-b">◆</div><div class="confetti confetti-c">◆</div>
+  <div class="hero-content">
+    <h1>Happy Birthday</h1>
+    <h2>Esther</h2>
+    <div class="hero-divider"><span>♥</span></div>
+    <p>To someone who somehow keeps making<br>ordinary moments memorable.</p>
+    <button id="startJourney">Begin Journey <span class="arrow">›</span></button>
+    <div id="daysCounter" class="days-counter">We've been friends for <strong>539</strong> days. <span>♥</span></div>
+  </div>
+</section>
+
+<section id="story">
+<h2>Our Story</h2>
+<div class="story-card">
+<h3>How We Met</h3>
+<p>We met randomly on a bus ride, where you somehow ended up saving me from getting lost on my way to town from campus.</p>
+</div>
+<div class="story-card">
+<h3>First Date</h3>
+<p>Meeting by the library after classes ended at 12:00 PM on a Monday. You had to guide me because I'd never been there before. And then there was my first Campus movie night with you. It was quick, but still one of those little moments worth remembering. ❤️</p>
+</div>
+<div class="story-card">
+<h3>Most Special Memory</h3>
+<p>We seriously have a habit of running into each other in the absolute weirdest, most unexpected places! Take the school elections, for instance - we randomly crossed paths at the manifesto night during all that crazy chaos, and you were genuinely the last person i expected to see there. Then there was the time we marched all the way from UNZA to the State House, seeing you there too, completely catching me by surprise once again. And now I'm starting to wonder if randomly bumping into you is just our thing. 😂</p>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Beautiful Memories</h2>
+<div class="gallery-grid">
+<img src="images/photo1.jpg" alt="Memory 1">
+<img src="images/photo2.jpg" alt="Memory 2">
+<img src="images/photo3.jpg" alt="Memory 3">
+<img src="images/photo4.jpg" alt="Memory 4">
+<img src="images/photo5.jpg" alt="Memory 5">
+<img src="images/photo6.jpg" alt="Memory 6">
+<img src="images/photo7.jpg" alt="Memory 7">
+<img src="images/photo8.jpg" alt="Memory 8">
+<img src="images/photo9.jpg" alt="Memory 9">
+</div>
+</section>
+
+<section id="reasons">
+<h2>10 Things I Like About You</h2>
+<div class="reason-grid">
+<div class="reason"><strong>Your smile</strong><span>It can make a good moment even better.</span></div>
+<div class="reason"><strong>Your laugh</strong><span>Especially when something is actually funny... or when we probably shouldn't be laughing. 😂</span></div>
+<div class="reason"><strong>Your kind heart</strong><span>There's a softness about you that I really appreciate.</span></div>
+<div class="reason"><strong>Your support</strong><span>You have a way of making people feel like they're not alone.</span></div>
+<div class="reason"><strong>Your eyes</strong><span>Honestly, I had to include these. 😌</span></div>
+<div class="reason"><strong>Your energy</strong><span>You somehow make things more interesting just by being there.</span></div>
+<div class="reason"><strong>Your strength</strong><span>I admire how you keep going, even when things aren't always easy.</span></div>
+<div class="reason"><strong>Your resilience</strong><span>You always seem to find your way through things.</span></div>
+<div class="reason"><strong>Simply being you</strong><span>No explanation needed.</span></div>
+<div class="reason"><strong>Your movie taste</strong><span>Well...<br>Most of the time. 😂</span></div>
+<div class="reason final-reason" style="grid-column: 1 / -1;">I'll stop here though...<br>I could definitely keep going. ❤️</div>
+</div>
+</section>
+
+<section id="future">
+<h2>Little Adventures Ahead</h2>
+<div class="dream-card"><strong>We might not have everything figured out yet...</strong><span>And honestly, I think that's part of the fun. There's still plenty of time for random plans, unexpected adventures and memories we haven't made yet.</span></div>
+<div class="dream-card"><strong>Holiday Adventure</strong><span>Since you mentioned the school vacation tour to Siavonga.<br>Honestly?<br>I'd love to go.<br>Sounds like a pretty good adventure to me.</span></div>
+<div class="dream-card"><strong>Arcade Games 🕹️</strong><span>You also mentioned going to the arcades.<br>Just know I'm probably going to take the games way too seriously. 😂<br>You've been warned.</span></div>
+<div class="dream-card"><strong>Movie Night 🎬</strong><span>And then there's the movie.<br>Good movie, snacks, random conversations and probably a review afterwards.<br>I'm in.<br><br>And maybe...<br>Legendary couch binge sessions, snacks and finally creating the official ranking system for every movie we watch.<br>Because apparently, we need one. 😂</span></div>
+</section>
+
+<section id="letter">
+<h2>A Letter For Essie </h2>
+<div class="letter-box">
+<div class="letter-paragraph">My Dearest Essie💕,</div>
+<div class="letter-paragraph">Happy Birthday.</div>
+<div class="letter-paragraph">I wanted to make you something a little more personal than just saying "Happy Birthday."</div>
+<div class="letter-paragraph">From that random bus ride where you saved me from getting lost, to the library, movie night, manifesto night, State House and all the random moments in between...</div>
+<div class="letter-paragraph">I'm really glad our paths crossed.</div>
+<div class="letter-paragraph">One of the things I like about you is your strength.</div>
+<div class="letter-paragraph">No matter what comes your way, you somehow find a way to keep going and still find reasons to smile.</div>
+<div class="letter-paragraph">I really admire that about you.</div>
+<div class="letter-paragraph">I also appreciate the little things.</div>
+<div class="letter-paragraph">The conversations.</div>
+<div class="letter-paragraph">The jokes.</div>
+<div class="letter-paragraph">Your random stories.</div>
+<div class="letter-paragraph">Your movie reviews.</div>
+<div class="letter-paragraph">And just the fact that spending time with you somehow makes even the most ordinary day a little more interesting.</div>
+<div class="letter-paragraph">I like your smile.</div>
+<div class="letter-paragraph">I like your laugh.</div>
+<div class="letter-paragraph">I like your heart.</div>
+<div class="letter-paragraph">I like your energy.</div>
+<div class="letter-paragraph">I like your movie taste...<br>Even when I disagree with it. 😂</div>
+<div class="letter-paragraph">Most of all...</div>
+<div class="letter-paragraph big-love">I really like you for being you. ❤️</div>
+<div class="letter-paragraph">Today is your day.</div>
+<div class="letter-paragraph">So smile.<br>Laugh.<br>Enjoy yourself.</div>
+<div class="letter-paragraph">And remember that somewhere out there is a guy who's genuinely happy that he met you.</div>
+<div class="letter-paragraph">I hope this little corner of the internet made you smile.</div>
+<div class="letter-paragraph">Happy Birthday, Essie 💝</div>
+<div class="letter-paragraph signature">Mike💝</div>
+</div>
+</section>
+
+<section id="finale">
+<h2>One Last Surprise</h2>
+<button id="giftButton">Open Gift</button>
+<div id="finalMessage">
+<h1>Happy Birthday, Essie 💝</h1>
+<p>
+If you smiled even once while reading this...<br><br>
+Then mission accomplished. ❤️<br><br>
+But seriously...<br><br>
+Happy Birthday, Essie. 🎂<br><br>
+To someone who has become a really special part of my memories, Happy Birthday.<br><br>
+If I could give you one gift, it would be the ability to see yourself the way the people who care about you see you.<br><br>
+Because you're pretty amazing.<br><br>
+You're funny, kind, strong, a little chaotic sometimes 😂, and honestly just really nice to have around.<br><br>
+I'm grateful for the random bus ride that started all this.<br><br>
+I'm grateful for the unexpected encounters.<br><br>
+The jokes.<br><br>
+And all the little moments in between.<br><br>
+And who knows?<br><br>
+Maybe Siavonga, the arcades, another movie, or some completely unexpected adventure will become the next memory.<br><br>
+For now...<br><br>
+I just hope this made you smile. ❤️<br><br>
+Have the happiest birthday, my favourite random encounter.<br><br>
+Happy Birthday, Essie. 🎂💕
+</p>
+</div>
+</section>
+
+</div>
+
+<div id="lightbox">
+<span id="closeLightbox">✕</span>
+<img id="lightboxImage" src="" alt="Lightbox View">
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
