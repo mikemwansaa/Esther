@@ -1,3 +1,5 @@
+SCAN THIS QR CODE FOR A PREVIEW or CLICK; https://mikemwansaa.github.io/Esther/
+<img width="2048" height="2048" alt="Happy Birthday Esther QR" src="https://github.com/user-attachments/assets/7e1ff9cf-22c5-4b5c-b63c-f66b016f064c" />
 
 # Esther's Birthday Website 🎂💗
 
