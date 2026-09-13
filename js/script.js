@@ -22,7 +22,7 @@ const manualBlowBtn = document.getElementById("manualBlowBtn");
 const smokeLayer = document.getElementById("smokeLayer");
 
 // Config Answers
-const acceptedAnswers = ["manchester city", "man city", "mcfc"];
+const acceptedAnswers = ["esther", "essie", "birthday girl", "nyirongo", "edita", "me"];
 
 let microphoneStream = null;
 let audioContext = null;
