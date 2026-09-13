@@ -270,7 +270,7 @@ let clicks = 0;
 if (heroName) {
 heroName.addEventListener("click", () => {
 clicks++;
-if (clicks === 5) {
+if (clicks === 2) {
 alert(" I will always be here for youu! ");
 clicks = 0;
 }
