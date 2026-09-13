@@ -255,9 +255,14 @@ behavior: "smooth"
 });
 }
 
-// 3. Friendship Counter — intentionally kept at the requested 539 days.
+// 3. Days Calculation Engine System
+const startDate = new Date("2025-02-19");
+const today = new Date();
+const difference = today - startDate;
+const daysTogether = Math.floor(difference / (1000 * 60 * 60 * 24));
+
 if (counter) {
-counter.textContent = "We've been friends for 539 days";
+counter.innerHTML = `We've been friends for ${daysTogether} days`;
 }
 
 // 4. Hero Name Easter Egg Click Handler
