@@ -274,7 +274,8 @@ if (heroName) {
 heroName.addEventListener("click", () => {
 clicks++;
 if (clicks === 2) {
-alert(" I will always be here for youu! ");
+alert("Numbers 6:24–26
+May the Lord bless you and protect you. May the Lord smile on you and be gracious to you. May the Lord show you his favor and give you his peace. ");
 clicks = 0;
 }
 });
